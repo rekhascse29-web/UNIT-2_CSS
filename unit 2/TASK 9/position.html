@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Positioning</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 2000px; /* for scrolling */
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .box {
+      width: 200px;
+      height: 100px;
+      margin: 20px;
+      padding: 10px;
+      color: white;
+    }
+
+    /* 🔹 Static (default) */
+    .static {
+      position: static;
+      background: gray;
+    }
+
+    /* 🔹 Relative */
+    .relative {
+      position: relative;
+      top: 20px;
+      left: 30px;
+      background: blue;
+    }
+
+    /* 🔹 Absolute */
+    .parent {
+      position: relative;
+      height: 200px;
+      background: lightgray;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: red;
+    }
+
+    /* 🔹 Fixed */
+    .fixed {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: green;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    /* 🔹 Sticky */
+    .sticky {
+      position: sticky;
+      top: 0;
+      background: orange;
+      padding: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Positioning</h1>
+
+  <!-- Sticky -->
+  <div class="sticky">I stick to the top when scrolling</div>
+
+  <div class="container">
+
+    <!-- Static -->
+    <div class="box static">
+      Static (default position)
+    </div>
+
+    <!-- Relative -->
+    <div class="box relative">
+      Relative (moved from normal position)
+    </div>
+
+    <!-- Absolute -->
+    <div class="parent">
+      Parent (relative)
+      <div class="box absolute">
+        Absolute (inside parent)
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Fixed -->
+  <div class="fixed">
+    Fixed (always visible)
+  </div>
+
+</body>
+</html>

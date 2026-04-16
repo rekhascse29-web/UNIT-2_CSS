@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Variables Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* 🔹 VARIABLES */
+    :root {
+      --primary-color: #3498db;
+      --secondary-color: #2ecc71;
+      --bg-color: #f4f4f4;
+      --text-color: #333;
+
+      --padding: 15px;
+      --border-radius: 10px;
+      --shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    /* 🔹 GLOBAL */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+    }
+
+    .header {
+      background: var(--primary-color);
+      color: white;
+      padding: var(--padding);
+      text-align: center;
+    }
+
+    .container {
+      padding: var(--padding);
+    }
+
+    /* 🔹 BUTTONS */
+    .btn {
+      padding: var(--padding);
+      border: none;
+      border-radius: var(--border-radius);
+      color: white;
+      cursor: pointer;
+      margin: 10px 5px;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: var(--primary-color);
+    }
+
+    .btn-secondary {
+      background: var(--secondary-color);
+    }
+
+    .btn:hover {
+      opacity: 0.8;
+    }
+
+    /* 🔹 CARDS */
+    .card {
+      background: white;
+      padding: var(--padding);
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      margin-top: 20px;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+    <h1>My Website</h1>
+    <p>Using CSS Variables & Reusable Design</p>
+  </header>
+
+  <main class="container">
+
+    <h2>Buttons</h2>
+    <button class="btn btn-primary">Primary Button</button>
+    <button class="btn btn-secondary">Secondary Button</button>
+
+    <h2>Cards</h2>
+
+    <div class="card">
+      <h3>Card Title</h3>
+      <p>This card uses reusable variables.</p>
+    </div>
+
+    <div class="card">
+      <h3>Another Card</h3>
+      <p>Easy to maintain and scalable design.</p>
+    </div>
+
+  </main>
+
+</body>
+</html>

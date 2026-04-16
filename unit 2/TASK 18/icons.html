@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Icons & Image Styling</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🔹 Favicon -->
+  <link rel="icon" href="https://picsum.photos/32" type="image/png">
+
+  <!-- 🔹 Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* 🔹 Responsive Image */
+    .responsive-img {
+      width: 100%;
+      max-width: 400px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    /* 🔹 Image Styling */
+    .styled-img {
+      width: 200px;
+      border-radius: 50%;
+      border: 5px solid #3498db;
+      margin-top: 10px;
+    }
+
+    /* 🔹 Icons */
+    .icons i {
+      font-size: 30px;
+      margin: 10px;
+      color: #333;
+      transition: 0.3s;
+    }
+
+    .icons i:hover {
+      color: #3498db;
+      transform: scale(1.2);
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Icons & Image Styling</h1>
+
+  <!-- Responsive Image -->
+  <div class="container">
+    <h2>Responsive Image</h2>
+    <img src="https://picsum.photos/400/250" class="responsive-img" alt="Responsive Image">
+  </div>
+
+  <!-- Styled Image -->
+  <div class="container">
+    <h2>Styled Image</h2>
+    <img src="https://picsum.photos/200" class="styled-img" alt="Circle Image">
+  </div>
+
+  <!-- Icons -->
+  <div class="container">
+    <h2>Icons (Font Awesome)</h2>
+    <div class="icons">
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-user"></i>
+      <i class="fa-solid fa-heart"></i>
+      <i class="fa-solid fa-star"></i>
+    </div>
+  </div>
+
+</body>
+</html>

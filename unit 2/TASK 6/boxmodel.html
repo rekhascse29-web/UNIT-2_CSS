@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Box Model</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      background: lightblue;
+      margin: 20px;          /* 🔹 Margin (outside space) */
+      padding: 20px;         /* 🔹 Padding (inside space) */
+      border: 5px solid blue;/* 🔹 Border */
+      outline: 3px dashed red; /* 🔹 Outline */
+      font-size: 18px;
+    }
+
+    /* 🔹 Individual properties */
+    .custom {
+      margin-top: 30px;
+      margin-bottom: 10px;
+      padding-left: 40px;
+      padding-right: 10px;
+      border-top: 5px solid green;
+      border-bottom: 5px solid orange;
+      outline-offset: 5px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Box Model</h1>
+
+  <div class="container">
+
+    <div class="box">
+      This box demonstrates Margin, Padding, Border, and Outline.
+    </div>
+
+    <div class="box custom">
+      This box shows individual margin, padding, border, and outline offset.
+    </div>
+
+  </div>
+
+</body>
+</html>

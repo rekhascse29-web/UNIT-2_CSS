@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enhanced CSS Selectors</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* 🔹 Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    /* 🔹 Element Selector */
+    p {
+      color: #333;
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    /* 🔹 Class Selectors */
+    .highlight {
+      background: yellow;
+      padding: 5px;
+      border-radius: 5px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 15px;
+      background: blue;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 10px;
+    }
+
+    /* 🔹 ID Selector */
+    #main-title {
+      text-align: center;
+      color: darkred;
+      margin-bottom: 20px;
+    }
+
+    /* 🔹 Grouping Selector */
+    h2, h3 {
+      color: green;
+      margin-bottom: 10px;
+    }
+
+    /* 🔹 Combined Selector */
+    .card p {
+      font-style: italic;
+    }
+
+    /* 🔹 Hover Effect */
+    .btn:hover {
+      background: darkblue;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ID Selector -->
+  <h1 id="main-title">CSS Selectors - Enhanced Demo</h1>
+
+  <!-- Card 1 -->
+  <div class="card">
+    <h2>Element Selector</h2>
+    <p>This paragraph is styled using an element selector.</p>
+    <p class="highlight">This uses both element + class selector.</p>
+    <a href="#" class="btn">Click Me</a>
+  </div>
+
+  <!-- Card 2 -->
+  <div class="card">
+    <h3>Class Selector</h3>
+    <p class="highlight">Class selectors can be reused many times.</p>
+    <p>This is a normal paragraph.</p>
+    <a href="#" class="btn">Learn More</a>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="card">
+    <h2>Grouping Selector</h2>
+    <p>Headings (h2, h3) share same style using grouping.</p>
+    <p class="highlight">Multiple elements can share same CSS.</p>
+  </div>
+
+</body>
+</html>

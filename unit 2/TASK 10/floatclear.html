@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Float & Clear</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    /* 🔹 Float Layout */
+    .left {
+      float: left;
+      width: 45%;
+      background: blue;
+      margin-right: 5%;
+    }
+
+    .right {
+      float: right;
+      width: 45%;
+      background: red;
+    }
+
+    /* 🔹 Clear Property */
+    .clear-box {
+      clear: both;
+      background: green;
+      margin-top: 20px;
+    }
+
+    /* 🔹 Clearfix Technique */
+    .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    /* Extra Styling */
+    .demo-box {
+      background: lightgray;
+      padding: 10px;
+      margin-top: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Float & Clear in CSS</h1>
+
+  <!-- Float Layout -->
+  <div class="container clearfix">
+    <h2>Float Layout</h2>
+
+    <div class="box left">Float Left</div>
+    <div class="box right">Float Right</div>
+
+    <!-- Clear -->
+    <div class="box clear-box">
+      This box uses clear: both (comes below floats)
+    </div>
+  </div>
+
+  <!-- Without Clearfix -->
+  <div class="container">
+    <h2>Without Clearfix (Problem)</h2>
+
+    <div class="box left">Float Left</div>
+    <div class="box right">Float Right</div>
+
+    <div class="demo-box">
+      Parent collapses because floats are not cleared ❌
+    </div>
+  </div>
+
+  <!-- With Clearfix -->
+  <div class="container clearfix">
+    <h2>With Clearfix (Solution)</h2>
+
+    <div class="box left">Float Left</div>
+    <div class="box right">Float Right</div>
+
+    <div class="demo-box">
+      Parent expands properly using clearfix ✅
+    </div>
+  </div>
+
+</body>
+</html>

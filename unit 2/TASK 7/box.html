@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Advanced</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    /* 🔹 Box Sizing */
+    * {
+      box-sizing: border-box; /* Important */
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      background: lightblue;
+      border: 3px solid blue;
+      padding: 20px;
+      margin: 10px 0;
+      text-align: center;
+    }
+
+    /* 🔹 Display Types */
+    .block {
+      display: block;
+      width: 100%;
+    }
+
+    .inline {
+      display: inline;
+      background: lightgreen;
+    }
+
+    .inline-block {
+      display: inline-block;
+      width: 150px;
+      background: lightcoral;
+    }
+
+    /* 🔹 Flex Layout */
+    .flex-container {
+      display: flex;
+      gap: 10px;
+    }
+
+    .flex-box {
+      flex: 1;
+      background: lightgoldenrodyellow;
+      padding: 20px;
+      border: 2px solid #999;
+      text-align: center;
+    }
+
+    /* 🔹 Visual Layout */
+    .layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .layout div {
+      flex: 1 1 30%;
+      background: #ddd;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+    }
+
+    /* 🔹 Exercise Styling */
+    .exercise {
+      background: #fafafa;
+      padding: 15px;
+      margin-top: 10px;
+      border-left: 5px solid #3498db;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Advanced Box Model & Layout</h1>
+
+  <!-- Box Sizing -->
+  <div class="container">
+    <h2>Box Sizing</h2>
+    <div class="box">
+      Using <b>box-sizing: border-box</b> ensures padding & border are included in width.
+    </div>
+  </div>
+
+  <!-- Display Types -->
+  <div class="container">
+    <h2>Display Types</h2>
+
+    <div class="box block">Block Element (full width)</div>
+
+    <span class="box inline">Inline 1</span>
+    <span class="box inline">Inline 2</span>
+
+    <div class="box inline-block">Inline-Block 1</div>
+    <div class="box inline-block">Inline-Block 2</div>
+  </div>
+
+  <!-- Flex Layout -->
+  <div class="container">
+    <h2>Flexbox Layout</h2>
+    <div class="flex-container">
+      <div class="flex-box">Flex 1</div>
+      <div class="flex-box">Flex 2</div>
+      <div class="flex-box">Flex 3</div>
+    </div>
+  </div>
+
+  <!-- Visual Layout -->
+  <div class="container">
+    <h2>Responsive Visual Layout</h2>
+    <div class="layout">
+      <div>Item 1</div>
+      <div>Item 2</div>
+      <div>Item 3</div>
+    </div>
+  </div>
+
+  <!-- Exercises -->
+  <div class="container">
+    <h2>Practice Exercises</h2>
+
+    <div class="exercise">
+      🔹 Create a box with 200px width and add padding & border using box-sizing.
+    </div>
+
+    <div class="exercise">
+      🔹 Convert inline elements into inline-block and set width.
+    </div>
+
+    <div class="exercise">
+      🔹 Build a 3-column layout using flexbox.
+    </div>
+
+    <div class="exercise">
+      🔹 Try changing flex values and observe layout changes.
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Advanced CSS Selectors</title>
+
+  <style>
+    /* 🔹 Universal Selector */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      margin-bottom: 10px;
+      color: darkblue;
+    }
+
+    /* 🔹 Attribute Selector */
+    input[type="text"] {
+      border: 2px solid blue;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+    input[type="password"] {
+      border: 2px solid red;
+      padding: 5px;
+      margin: 5px 0;
+    }
+
+    a[target="_blank"] {
+      color: green;
+      font-weight: bold;
+    }
+
+    /* 🔹 Descendant Selector (space) */
+    .parent p {
+      color: purple;
+    }
+
+    /* 🔹 Child Selector (>) */
+    .parent > span {
+      color: orange;
+      font-weight: bold;
+    }
+
+    /* 🔹 Adjacent Sibling Selector (+) */
+    h3 + p {
+      background: lightyellow;
+      padding: 5px;
+    }
+
+    /* 🔹 General Sibling Selector (~) */
+    h3 ~ p {
+      border-left: 4px solid gray;
+      padding-left: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Advanced CSS Selectors Demo</h1>
+
+  <!-- Attribute Selector -->
+  <div class="container">
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Text input">
+    <br>
+    <input type="password" placeholder="Password input">
+    <br>
+    <a href="https://example.com" target="_blank">Open Link</a>
+  </div>
+
+  <!-- Descendant & Child -->
+  <div class="container parent">
+    <h2>Descendant & Child Selector</h2>
+    <p>This is inside parent (Descendant).</p>
+    <div>
+      <p>This is nested deeper (Descendant).</p>
+    </div>
+    <span>This is direct child span (Child selector).</span>
+  </div>
+
+  <!-- Sibling Selectors -->
+  <div class="container">
+    <h2>Sibling Selectors</h2>
+    <h3>Heading</h3>
+    <p>This is adjacent sibling (next paragraph).</p>
+    <p>This is general sibling.</p>
+    <p>Another general sibling.</p>
+  </div>
+
+</body>
+</html>

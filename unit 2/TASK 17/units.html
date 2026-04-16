@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Units & Measurements</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      background: steelblue;
+      color: white;
+      margin: 10px 0;
+      padding: 10px;
+      text-align: center;
+      border-radius: 5px;
+    }
+
+    /* 🔹 px (fixed) */
+    .px {
+      width: 200px;
+    }
+
+    /* 🔹 % (relative to parent) */
+    .percent {
+      width: 50%;
+    }
+
+    /* 🔹 em (relative to parent font size) */
+    .em-parent {
+      font-size: 20px;
+    }
+
+    .em {
+      font-size: 2em; /* 40px */
+    }
+
+    /* 🔹 rem (relative to root html) */
+    html {
+      font-size: 16px;
+    }
+
+    .rem {
+      font-size: 2rem; /* 32px */
+    }
+
+    /* 🔹 viewport units */
+    .vh {
+      height: 20vh;
+      background: lightcoral;
+    }
+
+    .vw {
+      width: 50vw;
+      background: lightgreen;
+    }
+
+    /* 🔹 calc() */
+    .calc {
+      width: calc(100% - 50px);
+      background: orange;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Units & Measurements</h1>
+
+  <!-- PX -->
+  <div class="container">
+    <h2>px (Fixed)</h2>
+    <div class="box px">Width: 200px</div>
+  </div>
+
+  <!-- Percentage -->
+  <div class="container">
+    <h2>% (Relative)</h2>
+    <div class="box percent">Width: 50%</div>
+  </div>
+
+  <!-- EM -->
+  <div class="container em-parent">
+    <h2>em (Relative to Parent)</h2>
+    <div class="box em">Font Size: 2em</div>
+  </div>
+
+  <!-- REM -->
+  <div class="container">
+    <h2>rem (Relative to Root)</h2>
+    <div class="box rem">Font Size: 2rem</div>
+  </div>
+
+  <!-- Viewport -->
+  <div class="container">
+    <h2>Viewport Units</h2>
+    <div class="box vh">Height: 20vh</div>
+    <div class="box vw">Width: 50vw</div>
+  </div>
+
+  <!-- calc() -->
+  <div class="container">
+    <h2>calc() Function</h2>
+    <div class="box calc">Width: calc(100% - 50px)</div>
+  </div>
+
+</body>
+</html>

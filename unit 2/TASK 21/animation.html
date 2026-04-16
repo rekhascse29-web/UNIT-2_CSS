@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Animations</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      width: 100px;
+      height: 100px;
+      margin: 20px auto;
+      background: steelblue;
+    }
+
+    /* 🔹 1. Basic Animation */
+    @keyframes moveBox {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(200px);
+      }
+    }
+
+    .move {
+      animation: moveBox 2s infinite alternate;
+    }
+
+    /* 🔹 2. Color Change Animation */
+    @keyframes colorChange {
+      0% { background: red; }
+      50% { background: yellow; }
+      100% { background: green; }
+    }
+
+    .color {
+      animation: colorChange 3s infinite;
+    }
+
+    /* 🔹 3. Bounce Effect */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-50px); }
+    }
+
+    .bounce {
+      animation: bounce 1s infinite;
+    }
+
+    /* 🔹 4. Rotation */
+    @keyframes rotateBox {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .rotate {
+      animation: rotateBox 2s linear infinite;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Animations</h1>
+
+  <!-- Move -->
+  <div class="container">
+    <h2>Move Animation</h2>
+    <div class="box move"></div>
+  </div>
+
+  <!-- Color -->
+  <div class="container">
+    <h2>Color Change</h2>
+    <div class="box color"></div>
+  </div>
+
+  <!-- Bounce -->
+  <div class="container">
+    <h2>Bounce Effect</h2>
+    <div class="box bounce"></div>
+  </div>
+
+  <!-- Rotate -->
+  <div class="container">
+    <h2>Rotation</h2>
+    <div class="box rotate"></div>
+  </div>
+
+</body>
+</html>

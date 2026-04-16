@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Borders, Shadows & Effects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      width: 200px;
+      margin: 15px auto;
+      padding: 20px;
+      background: steelblue;
+      color: white;
+      text-align: center;
+    }
+
+    /* 🔹 Border Radius */
+    .rounded {
+      border-radius: 20px;
+    }
+
+    .circle {
+      border-radius: 50%;
+      width: 150px;
+      height: 150px;
+      line-height: 110px;
+    }
+
+    /* 🔹 Box Shadow */
+    .shadow {
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
+    }
+
+    .strong-shadow {
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+    }
+
+    /* 🔹 Outline */
+    .outline {
+      outline: 3px dashed red;
+      outline-offset: 5px;
+    }
+
+    /* 🔹 Opacity */
+    .opacity {
+      opacity: 0.5;
+    }
+
+    /* 🔹 Hover Effects */
+    .hover-effect:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 15px #333;
+      transition: 0.3s;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Borders, Shadows & Effects</h1>
+
+  <!-- Border Radius -->
+  <div class="container">
+    <h2>Border Radius</h2>
+    <div class="box rounded">Rounded Corners</div>
+    <div class="box circle">Circle</div>
+  </div>
+
+  <!-- Box Shadow -->
+  <div class="container">
+    <h2>Box Shadow</h2>
+    <div class="box shadow">Soft Shadow</div>
+    <div class="box strong-shadow">Strong Shadow</div>
+  </div>
+
+  <!-- Outline -->
+  <div class="container">
+    <h2>Outline Effect</h2>
+    <div class="box outline">Outline with Offset</div>
+  </div>
+
+  <!-- Opacity -->
+  <div class="container">
+    <h2>Opacity</h2>
+    <div class="box opacity">Opacity 0.5</div>
+  </div>
+
+  <!-- Combined Effect -->
+  <div class="container">
+    <h2>Hover Effect</h2>
+    <div class="box hover-effect">Hover Me</div>
+  </div>
+
+</body>
+</html>

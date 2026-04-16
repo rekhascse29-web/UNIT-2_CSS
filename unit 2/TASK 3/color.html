@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Colors & Backgrounds</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      padding: 20px;
+      background: #333;
+      color: white;
+    }
+
+    .container {
+      padding: 20px;
+    }
+
+    .box {
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* 🔹 HEX Color */
+    .hex {
+      background-color: #3498db; /* Blue */
+    }
+
+    /* 🔹 RGB Color */
+    .rgb {
+      background-color: rgb(231, 76, 60); /* Red */
+    }
+
+    /* 🔹 HSL Color */
+    .hsl {
+      background-color: hsl(120, 60%, 40%); /* Green */
+    }
+
+    /* 🔹 RGBA (with transparency) */
+    .rgba {
+      background-color: rgba(155, 89, 182, 0.7);
+    }
+
+    /* 🔹 HSLA */
+    .hsla {
+      background-color: hsla(45, 100%, 50%, 0.7);
+      color: black;
+    }
+
+    /* 🔹 Background Image */
+    .bg-image {
+      background-image: url("https://picsum.photos/800/300");
+      background-size: cover;
+      background-position: center;
+      height: 200px;
+    }
+
+    /* 🔹 Background Repeat */
+    .bg-repeat {
+      background-image: url("https://picsum.photos/100");
+      background-repeat: repeat;
+      height: 150px;
+      color: black;
+    }
+
+    /* 🔹 Background Gradient */
+    .gradient {
+      background: linear-gradient(to right, red, yellow);
+      color: black;
+    }
+
+    /* 🔹 Multiple Background Properties */
+    .bg-full {
+      background: url("https://picsum.photos/800/300") no-repeat center/cover;
+      height: 200px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Colors & Backgrounds</h1>
+
+  <div class="container">
+
+    <div class="box hex">HEX Color (#3498db)</div>
+
+    <div class="box rgb">RGB Color (rgb(231, 76, 60))</div>
+
+    <div class="box hsl">HSL Color (hsl(120, 60%, 40%))</div>
+
+    <div class="box rgba">RGBA with transparency</div>
+
+    <div class="box hsla">HSLA with transparency</div>
+
+    <div class="box bg-image">Background Image (cover)</div>
+
+    <div class="box bg-repeat">Background Repeat</div>
+
+    <div class="box gradient">Linear Gradient Background</div>
+
+    <div class="box bg-full">Shorthand Background Property</div>
+
+  </div>
+
+</body>
+</html>

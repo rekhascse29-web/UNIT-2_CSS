@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flexbox Demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* 🔹 Flex Container */
+    .flex-container {
+      display: flex;
+      border: 2px solid #333;
+      padding: 10px;
+      gap: 10px;
+    }
+
+    .box {
+      background: steelblue;
+      color: white;
+      padding: 20px;
+      text-align: center;
+      flex: 1;
+      border-radius: 5px;
+    }
+
+    /* 🔹 Flex Direction */
+    .row {
+      flex-direction: row;
+    }
+
+    .column {
+      flex-direction: column;
+      height: 250px;
+    }
+
+    /* 🔹 Justify Content */
+    .start {
+      justify-content: flex-start;
+    }
+
+    .center {
+      justify-content: center;
+    }
+
+    .space-between {
+      justify-content: space-between;
+    }
+
+    .space-around {
+      justify-content: space-around;
+    }
+
+    .space-evenly {
+      justify-content: space-evenly;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Flexbox</h1>
+
+  <!-- Flex Direction -->
+  <div class="container">
+    <h2>Flex Direction</h2>
+
+    <h3>Row (Default)</h3>
+    <div class="flex-container row">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+
+    <h3>Column</h3>
+    <div class="flex-container column">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+    </div>
+  </div>
+
+  <!-- Justify Content -->
+  <div class="container">
+    <h2>Justify Content</h2>
+
+    <h3>flex-start</h3>
+    <div class="flex-container start">
+      <div class="box">1</div>
+      <div class="box">2</div>
+    </div>
+
+    <h3>center</h3>
+    <div class="flex-container center">
+      <div class="box">1</div>
+      <div class="box">2</div>
+    </div>
+
+    <h3>space-between</h3>
+    <div class="flex-container space-between">
+      <div class="box">1</div>
+      <div class="box">2</div>
+    </div>
+
+    <h3>space-around</h3>
+    <div class="flex-container space-around">
+      <div class="box">1</div>
+      <div class="box">2</div>
+    </div>
+
+    <h3>space-evenly</h3>
+    <div class="flex-container space-evenly">
+      <div class="box">1</div>
+      <div class="box">2</div>
+    </div>
+
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Transitions & Hover Effects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+    }
+
+    /* 🔹 Button */
+    .btn {
+      padding: 12px 20px;
+      background: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      /* Transition */
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #2980b9;
+      transform: scale(1.1);
+    }
+
+    /* 🔹 Card Hover */
+    .card {
+      width: 250px;
+      margin: 20px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+
+      transition: all 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    }
+
+    /* 🔹 Image Hover */
+    .img {
+      width: 200px;
+      transition: transform 0.4s ease;
+    }
+
+    .img:hover {
+      transform: rotate(5deg) scale(1.1);
+    }
+
+    /* 🔹 Link Hover */
+    a {
+      text-decoration: none;
+      color: #333;
+      font-size: 18px;
+      transition: color 0.3s ease;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>Transitions & Hover Effects</h1>
+
+  <!-- Button -->
+  <div class="container">
+    <h2>Button Hover</h2>
+    <button class="btn">Hover Me</button>
+  </div>
+
+  <!-- Card -->
+  <div class="container">
+    <h2>Card Hover Effect</h2>
+    <div class="card">
+      <h3>Product Card</h3>
+      <p>Hover to see animation</p>
+    </div>
+  </div>
+
+  <!-- Image -->
+  <div class="container">
+    <h2>Image Hover Effect</h2>
+    <img src="https://picsum.photos/200" class="img" alt="Image">
+  </div>
+
+  <!-- Link -->
+  <div class="container">
+    <h2>Link Hover</h2>
+    <a href="#">Hover this link</a>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text Effects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 🔹 Import Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .box {
+      margin: 15px 0;
+      padding: 15px;
+      background: #fafafa;
+      border-left: 5px solid #3498db;
+      font-size: 20px;
+    }
+
+    /* 🔹 Text Shadow */
+    .shadow {
+      text-shadow: 2px 2px 5px gray;
+    }
+
+    /* 🔹 Strong Shadow Effect */
+    .strong-shadow {
+      text-shadow: 3px 3px 8px black;
+      color: #555;
+    }
+
+    /* 🔹 Line Height */
+    .line-height {
+      line-height: 1.8;
+    }
+
+    /* 🔹 Letter Spacing */
+    .letter-spacing {
+      letter-spacing: 4px;
+    }
+
+    /* 🔹 Combined Effect */
+    .combined {
+      text-shadow: 2px 2px 4px #999;
+      letter-spacing: 2px;
+      line-height: 1.6;
+      font-weight: 700;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <h1>CSS Text Effects</h1>
+
+  <div class="container">
+
+    <div class="box shadow">
+      This text has a soft shadow effect
+    </div>
+
+    <div class="box strong-shadow">
+      This text has a strong shadow effect
+    </div>
+
+    <div class="box line-height">
+      This paragraph demonstrates line height. It improves readability by increasing space between lines.
+    </div>
+
+    <div class="box letter-spacing">
+      LETTER SPACING EFFECT
+    </div>
+
+    <div class="box combined">
+      Combined Text Effects (Shadow + Spacing + Line Height)
+    </div>
+
+  </div>
+
+</body>
+</html>
